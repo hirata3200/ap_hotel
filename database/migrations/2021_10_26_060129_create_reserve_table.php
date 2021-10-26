@@ -17,7 +17,7 @@ class CreateReserveTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('address');
-            $table->int('tel');
+            $table->string('tel');
             $table->timestamps();
         });
     }
