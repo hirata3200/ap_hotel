@@ -17,8 +17,8 @@ class CreateReservesTable extends Migration
             $table->increments('id');
             $table->integer('users_id');
             $table->string('number');
-            $table->dateTime('check_in');
-            $table->dateTime('check_out');
+            $table->date('check_in');
+            $table->date('check_out');
             $table->timestamps();
         });
     }
