@@ -1,19 +1,17 @@
 <html>
     <head>
-        <title>User/Index</title>
+        <title>room/Index</title>
     </head>
     <body>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <h1>User/Index</h1>
+        <h1>Room/Index</h1>
 
         <table class="table-info">
-            <tr><th>ID</th><th>Name</th><th>Address</th><th>Tel</th></tr>
-            @foreach ($items as $item)
+            <tr><th>Room_id</th><th>Max_number</th></tr>
+            @foreach ($rooms as $room)
             <tr class="table-success">
-                <td>{{$item->id}}</td>
-                <td>{{$item->name}}</td>
-                <td>{{$item->address}}</td>
-                <td>{{$item->tel}}</td>
+                <td>{{$room->room_id}}</td>
+                <td>{{$room->room_number}}号室</td>
             </tr>
             @endforeach
         </table>
@@ -28,6 +26,7 @@
             text-align: center;
         }
         th{
+            border: dotted;
             border-bottom: double;
         }
     </style>

@@ -1,19 +1,20 @@
 <html>
     <head>
-        <title>User/Index</title>
+        <title>reserves/Index</title>
     </head>
     <body>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <h1>User/Index</h1>
+        <h1>Reserves/Index</h1>
 
         <table class="table-info">
-            <tr><th>ID</th><th>Name</th><th>Address</th><th>Tel</th></tr>
-            @foreach ($items as $item)
+            <tr><th>ID</th><th>Users-ID</th><th>number</th><th>check_in</th><th>check_out</th></tr>
+            @foreach ($reserves as $reserve)
             <tr class="table-success">
-                <td>{{$item->id}}</td>
-                <td>{{$item->name}}</td>
-                <td>{{$item->address}}</td>
-                <td>{{$item->tel}}</td>
+                <td>{{$reserve->id}}</td>
+                <td>{{$reserve->users_id}}</td>
+                <td>{{$reserve->number}}人</td>
+                <td>{{$reserve->check_in}}</td>
+                <td>{{$reserve->check_out}}</td>
             </tr>
             @endforeach
         </table>

@@ -1,3 +1,9 @@
 <?php
 
-Route::get('/user','UserController@index');Route::get('/reservation','ReservationController@index');
+Route::get('/user','UserController@index');
+
+Route::get('/reserve','ReserveController@index');
+
+Route::get('/roomaster','RoomasterController@index');
+
+Route::get('/room','RoomController@index');
