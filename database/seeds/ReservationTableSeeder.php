@@ -13,7 +13,7 @@ class ReservationTableSeeder extends Seeder
     public function run()
     {
         $param = [
-            'users_id' => '1',
+            'user_id' => '1',
             'number' => '5',
             'check_in' => '2021-11-5',
             'check_out' => '2021-11-6'
@@ -21,7 +21,7 @@ class ReservationTableSeeder extends Seeder
         DB::table('reserves')->insert($param);
 
         $param = [
-            'users_id' => '2',
+            'user_id' => '2',
             'number' => '5',
             'check_in' => '2021-11-5',
             'check_out' => '2021-11-7'
